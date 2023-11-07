@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>In this task we create an object and display data from the object:</p>
+
+<p id="Task"></p>
+<script>
+    // Create an object:
+    const person = {
+      firstName: "Muqadas",
+      lastName: "Shoaib",
+      id: 123,
+      country: "Pakistan",
+      fullName: function() {
+        return this.firstName + " " + this.lastName + " " + this.country + " " +this.id;
+      }
+    };
+    
+    // Display data from the object:
+    document.getElementById("Task").innerHTML = person.fullName();
+    </script>
+    
+    </body>
+    </html>
+    
